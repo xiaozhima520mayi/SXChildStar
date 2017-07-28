@@ -1,0 +1,122 @@
+﻿body{overflow:hidden;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.top_r{ position:absolute; right:0; top:0; z-index:22;}
+.top_r a{ float:right; margin:25px 25px 0 0; display:inline;}
+.top_r span{ float:right;margin:25px 54px 0 0; display:inline;}
+.top_r b{ float:right;margin:22px 20px 0 0; display:inline;}
+.circuit{ position:relative; z-index:0;}
+.cir_tr{ position:absolute; right:0; top:0; background:url(../images/list/circuit_tr.png) no-repeat; width:679px; height:118px;}
+.cir_t{position:absolute; left:88px; top:117px; background:url(../images/list/circuit_t.png) no-repeat; width:1755px; height:238px;}
+.cir_rb{position:absolute; right:78px; top:536px; background:url(../images/list/circuit_rb.png) no-repeat; width:531px; height:466px;}
+.cir_b{position:absolute; left:88px; top:826px; background:url(../images/list/circuit_b.png) no-repeat; width:1333px; height:180px;}
+.main{background:url(../images/list/main.png) no-repeat; width:1680px;height:810px;position:absolute;left:120px;top:155px; z-index:11;}
+.number{background:url(../images/list/number.png) no-repeat; width:1486px;height:22px;position:absolute;right:0;top:1026px;}
+.roller{background:url(../images/list/roller.png) no-repeat; width:386px;height:401px;position:absolute;left:-102px;top:788px;}
+.roll{ animation:roll 10s linear infinite; -moz-animation:roll 10s linear infinite;-ms-animation:roll 10s linear infinite;-o-animation:roll 10s linear infinite;-webkit-animation:roll 10s linear infinite; transform-origin:center center;-moz-transform-origin:center center;-webkit-transform-origin:center center;} 
+@keyframes roll{
+    0%{transform:rotate(0)}
+    100%{transform:rotate(360deg)}
+}
+@-moz-keyframes roll{
+    0%{-moz-transform:rotate(0)}
+    100%{-moz-transform:rotate(360deg)}
+}
+@-webkit-keyframes roll{
+    0%{-webkit-transform:rotate(0)}
+    100%{-webkit-transform:rotate(360deg)}
+}
+@-o-keyframes roll{
+    0%{-o-transform:rotate(0)}
+    100%{-o-transform:rotate(360deg)}
+}
+@-ms-keyframes roll{
+    0%{-ms-transform:rotate(0)}
+    100%{-ms-transform:rotate(360deg)}
+}
+.article_box{ position:absolute; top:40px;left:136px;}
+/*阅读指导*/
+.list{ position:absolute; right:0; top:195px; z-index:222;}
+.list li{ height:46px; width:307px; border:#9edefa 2px solid; border-right:0; margin-bottom:8px;background:url(../images/list/list.jpg) no-repeat; text-indent:10px; vertical-align:middle; line-height:46px; position:relative; cursor:pointer;}
+.list li i{ background-color:#9edefa; height:46px; width:307px; display:inline-block;position:absolute;left:0px;top:0px;z-index:1; transform:translateX(0); -o-transform:translateX(0); -webkit-transform:translateX(0); -ms-transform:translateX(0); -moz-transform:translateX(0); transition:all 0.3s linear;-ms-transition:all 0.3s linear;-webkit-transition:all 0.3s linear;-o-transition:all 0.3s linear;-moz-transition:all 0.3s linear;}
+.list li.e i{ transform:translateX(307px); -ms-transform:translateX(307px); -o-transform:translateX(307px); -webkit-transform:translateX(307px); -moz-transform:translateX(307px);}
+.list li span{ display:inline-block;height:24px; width:290px; margin-top:15px; position:relative; z-index:2;}
+.list li.one span{background:url(../images/list/list1.png) no-repeat;}
+.list li.one span.e{background:url(../images/list/list1_e.png) no-repeat; }
+.list li.two span{background:url(../images/list/list2.png) no-repeat;}
+.list li.two span.e{background:url(../images/list/list2_e.png) no-repeat; }
+.list li.three span{background:url(../images/list/list3.png) no-repeat;}
+.list li.three span.e{background:url(../images/list/list3_e.png) no-repeat; }
+.list li.four span{background:url(../images/list/list4.png) no-repeat;}
+.list li.four span.e{background:url(../images/list/list4_e.png) no-repeat; }
+.list li.five span{background:url(../images/list/list5.png) no-repeat;}
+.list li.five span.e{background:url(../images/list/list5_e.png) no-repeat; }
+.up_down{ position:absolute; right:30px; top:387px;background:url(../images/list/up_down.png) no-repeat; width:150px; height:320px;}
+.up{ position:absolute;top:59px; left:0; width:100px; height:110px;}
+.down{ position:absolute;top:146px; left:50px; width:100px; height:110px;}
+
+/*好书推荐区域*/
+.book_recom{ width:1490px; margin:28px auto 0;}
+.book_recom li{ float:left;width:253px;height:694px;margin:0 25px 0 20px;display:inline;background:url(../images/list/book_list.png) no-repeat;}
+.book_recom li a{ height:215px;width:216px;margin:0 auto; padding-top:242px; display:block;}
+.top_r a.return{  display: inline;float: right;margin: 25px 54px 0 0;}
+.new_book{ width:1482px; margin:54px 0 0 136px;}
+.left{ position:relative; width:610px; float:left;}
+.left h1{ overflow:hidden;}
+.left h1 img,.left h1 span{ float:left;}
+.left h1 span{ margin-left:19px;}
+.left h1 span b{color:#9edefa; font:normal 29px/34px "Droid Sans Fallback",Arial; display:inline-block;}
+.switch_up{ width:54px; height:54px;background:url(../images/list/switch_down.png) no-repeat; position:absolute; right:20px; top:0;}
+.switch_down{ width:54px; height:54px;background:url(../images/list/switch_up.png) no-repeat; position:absolute; right:83px; top:0;}
+.uls{ margin-top:15px;width:610px; overflow:hidden;}
+.uls ul{ width:620px;}
+.uls li{ float:left; width:135px; height:191px; padding:6px; border:0;}
+.uls li.e{border:#9edefa 3px solid;padding:3px;}
+.right{ width:766px; height:639px;background:url(../images/list/book_intro.png) no-repeat;}
+.right .book_text{ width:292px; margin:70px 0 0 20px; float:left; display:inline;}
+.right div,.right p{ color:#9edefa; font:normal 18px/30px "Droid Sans Fallback",Arial; }
+.right .intro_text{text-indent:2em; margin-bottom:30px; height:240px; overflow:hidden;}
+.book_cover{ float:right; margin:125px 75px 0 0; width:257px; overflow:hidden; display:inline;}
+.books{ display:none;}
+.book_cover p{ width:255px; height:369px; border:#9ddaf4 1px solid; border-radius:2px; box-shadow:0 0 3px #64757b;}
+.book_cover p img{ border-radius:2px;}
+.book_cover h2{color:#9edefa; padding:0 10px; font:normal 48px/60px "Droid Sans Fallback",Arial; margin-top:30px; text-align:center;}
+/*机械核心金苹果巡展*/
+.apple_box{ position:absolute; top:40px;left:110px;}
+.h1_tit{ margin-left:27px;}
+.list2{ position:absolute; right:16px; top:41px; width:346px;}
+.list2 li{ height:156px; width:155px; border:#9edefa 3px solid;margin:0 12px 9px 0;background-color:rgba(158,222,250,0.4);position:relative; cursor:pointer; float:left; text-align:center;}
+.list2 li i{  border:#9edefa 6px solid;position:absolute;left:-6px;top:-6px;z-index:1; height:156px; width:155px; display:none;}
+.list2 li.e i{ display:block;}
+.list2 li span{ display:inline-block;height:92px; width:92px; margin-top:30px; position:relative; z-index:2;}
+.list2 li.one span{background:url(../images/list/apple1.png) no-repeat;}
+.list2 li.one span.e{background:url(../images/list/apple1_e.png) no-repeat; }
+.list2 li.two span{background:url(../images/list/apple2.png) no-repeat;}
+.list2 li.two span.e{background:url(../images/list/apple2_e.png) no-repeat; }
+.list2 li.three span{background:url(../images/list/apple3.png) no-repeat;}
+.list2 li.three span.e{background:url(../images/list/apple3_e.png) no-repeat; }
+.list2 li.four span{background:url(../images/list/apple4.png) no-repeat;}
+.list2 li.four span.e{background:url(../images/list/apple4_e.png) no-repeat; }
+.list2 li.five span{background:url(../images/list/apple5.png) no-repeat;}
+.list2 li.five span.e{background:url(../images/list/apple5_e.png) no-repeat; }
+.list2 li.six span{background:url(../images/list/apple6.png) no-repeat;}
+.list2 li.six span.e{background:url(../images/list/apple6_e.png) no-repeat; }
+.apple_main{ height:670px;}
+.apple_list{width:1060px; margin-top:40px;}
+.app_intro{ float:right; width:730px; height:314px;}
+.app_intro h2{ border-bottom:#9edefa 4px solid;margin-bottom:4px;}
+.app_intro h2 a{ color:#e7f8ff; font:normal 36px/76px "Droid Sans Fallback",Arial; }
+.app_intro div{ border-top:#9edefa 1px solid; padding-top:17px; }
+.app_intro div p{color:#e7f8ff; font:normal 20px/36px "Droid Sans Fallback",Arial; text-indent:2em; text-align:justify; text-justify:inter-ideograph;}
+.app_img{ display:inline-block;background:url(../images/list/app_box.png) no-repeat; width:312px; height:314px;}
+.app_img img{ margin:19px 0 0 20px;}
+.apple_list li{ height:314px; margin-bottom:12px; width:1060px;}
+/*视频播放*/
+.video{ width:1744px; height:888px; position:relative; margin:118px auto 0;}
+.vid_l{background:url(../images/list/video_l.png) no-repeat; width:62px; height:888px; position:absolute;left:0; top:0;}
+.vid_r{background:url(../images/list/video_r.png) no-repeat; width:62px; height:888px; position:absolute;right:0; top:0;}
+.vid_m{ background:rgba(158,222,250,0.6); margin:4px auto 0; width:1558px; height:882px;}
+/*追加*/
+.award_img{background:url(../images/list/award_img.png) no-repeat; width:1496px; height:494px; margin:60px auto 0;}
+.book_recom .award_img ul{ float:left; width:350px;margin-right:24px;overflow:hidden;}
+.book_recom .award_img li{  width:350px;text-indent:60px;font:normal 19px/32px "Droid Sans Fallback",Arial;height:32px; margin:0 0 39px 0; float:none; color:#9edefa; background:none;display:block;}
+.book_recom .award_img .ul4 li{ text-indent:85px;  width: 360px;}
+.construction{font:normal 40px/500px "Droid Sans Fallback",Arial; color:#9edefa; text-align:center;}

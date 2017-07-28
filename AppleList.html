@@ -1,0 +1,94 @@
+﻿<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/list.css" rel="stylesheet" />
+    <script src="WebUI/js/jquery-1.4.1.min.js"></script>
+</head>
+<body>
+    <div class="top_r">
+        <a href="javascript://" class="index"><img src="WebUI/images/list/return_star.png" /></a>
+        <span><img src="WebUI/images/list/apple_tit.png" /></span>
+        <b><img src="WebUI/images/list/apple_column.png" /></b>
+    </div>
+    <div class="circuit">
+        <div class="cir_tr"></div>
+        <div class="cir_t"></div>
+        <div class="cir_rb"></div>
+        <div class="cir_b"></div>
+        <div class="roller roll"></div>
+        <div class="number"></div>
+        <div class="main">
+            <ul class="list2">
+                <li class="one e"><i></i><span class="e"></span></li>
+                <li class="two"><i></i><span></span></li>
+                <li class="three"><i></i><span></span></li>
+                <li class="four"><i></i><span></span></li>
+                <li class="five"><i></i><span></span></li>
+                <li class="six"><i></i><span></span></li>
+            </ul>
+            <div style="display:block;" class="apple_box">
+                <iframe src="apple1.html" class="iframe" width="1130" height="740" frameborder="0" scrolling="no" allowtransparency="true" style="background-color: transparent; display: block;"></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".list2 li").click(function () {
+            $(this).addClass("e").siblings("li").removeClass("e");
+            $(".list2 li").children("span").removeClass("e");
+            $(this).children("span").addClass("e");
+        })
+        $(".one").click(function () {
+            $(".article_box").show();
+            $(".iframe").attr("src", "apple1.html");
+            setTimeout(function () {
+                $(".iframe").css("display", "block");
+            }, 300)
+        })
+        $(".two").click(function () {
+            $(".article_box").show();
+            $(".iframe").attr("src", "apple2.html");
+            setTimeout(function () {
+                $(".iframe").css("display", "block");
+            }, 300)
+        })
+        $(".three").click(function () {
+            $(".article_box").show();
+            $(".iframe").attr("src", "apple3.html");
+            setTimeout(function () {
+                $(".iframe").css("display", "block");
+            }, 300)
+        })
+        $(".four").click(function () {
+            $(".article_box").show();
+            $(".iframe").attr("src", "apple4.html");
+            setTimeout(function () {
+                $(".iframe").css("display", "block");
+            }, 300)
+        })
+        $(".five").click(function () {
+            $(".article_box").show();
+            $(".iframe").attr("src", "apple5.html");
+            setTimeout(function () {
+                $(".iframe").css("display", "block");
+            }, 300)
+        })
+        $(".six").click(function () {
+            $(".article_box").show();
+            $(".iframe").attr("src", "apple6.html");
+            setTimeout(function () {
+                $(".iframe").css("display", "block");
+            }, 300)
+        })
+
+        $(".index").click(function () {
+            top.shua();
+        })
+document.oncontextmenu=new Function('event.returnValue=false;');
+document.onselectstart=new Function('event.returnValue=false;');
+    </script>
+</body>
+</html>

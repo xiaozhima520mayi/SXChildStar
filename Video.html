@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1744, height=888, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/list.css" rel="stylesheet" />
+    <script src="WebUI/js/jquery-1.4.1.min.js"></script>
+</head>
+<body>
+    <div class="top_r">
+        <a href="javascript://" class="index"><img src="WebUI/images/list/return_star.png" /></a>
+        <span><img src="WebUI/images/list/fireball_tit.png" /></span>
+        <b><img src="WebUI/images/list/fire_column.png" /></b>
+    </div>
+    <div class="cir_tr"></div>
+    <div class="video">
+        <div class="vid_l"></div>
+        <div class="vid_m">
+            <video width="1558" height="882" controls="controls">
+                <source src="WebUI/swf/bbz.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="vid_r"></div>
+    </div>
+    <script>
+        $(".index").click(function () {
+            window.parent.shua();
+        })
+document.oncontextmenu=new Function('event.returnValue=false;');
+document.onselectstart=new Function('event.returnValue=false;');
+    </script>
+</body>
+</html>
